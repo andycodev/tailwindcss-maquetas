@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    ::-webkit-scrollbar {
+        display: none;
+    }
+</style>
+</head>
+
+<body>
+  <div id="app" class="flex flex-col h-screen">
+    <nav class="bg-indigo-700 rounded-b-full lg:rounded-none">
+      <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+        <div class="relative flex items-center justify-between h-16">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+
+          </div>
+          <div class="flex-1 flex items-center sm:items-stretch sm:justify-start">
+            <div class="flex-shrink-0 flex items-center">
+              <span class="block h-8 w-auto text-white text-xl ml-5 font-bold">🥗 Registra</span>
+            </div>
+          </div>
+          <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <button type="button" class="bg-indigo-900 p-2 mr-5 rounded-lg text-white">
+              <span>Salir</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="flex-1 overflow-y-auto p-5">
+      <div class="bg-white">
+        <div class="pt-0">
+
+
+          <!-- Product info -->
+          <div
+            class="max-w-2xl mx-auto pt-6 pb-16 px-4 sm:px-6 lg:max-w-7xl lg:pt-16 lg:pb-24 lg:px-8 lg:grid lg:grid-cols-1 lg:grid-rows-[auto,auto,1fr] lg:gap-x-8">
+            <div class="lg:col-span-2 lg:border-gray-200 lg:pr-8">
+              <h1 class="text-4xl tracking-tight font-bold text-gray-900 sm:text-5xl md:text-6xl">
+                <span class="block xl:inline">Hola 👋</span>
+                <!-- <span class="hidden xl:inline font-normal">/</span> -->
+                <span class="block text-indigo-600 xl:inline">Andy Giampierre</span>
+              </h1>
+            </div>
+
+            <!-- Options -->
+            <div class="mt-5 mr-4 lg:mt-5 lg:row-span-3">
+              <div class="mt-5">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-lg text-indigo-900 font-medium">
+                    💵 Resumen general
+                  </h3>
+                </div>
+
+                <fieldset class="mt-3">
+                  <div class="grid grid-cols-3 gap-4 sm:grid-cols-3 lg:grid-cols-3">
+                    <div class="p-6 max-w-sm mx-auto bg-gray-100 rounded-xl shadow-md flex items-center">
+                      <div class="px-4 py-5 text-center sm:px-6">
+                        <p class="text-3xl font-bold text-gray-500">
+                          150
+                        </p>
+                        <p class="mt-1 max-w-2xl font-medium text-sm text-gray-500">
+                          Monto
+                        </p>
+                      </div>
+                    </div>
+                    <div class="p-6 max-w-sm mx-auto bg-gray-100 rounded-xl shadow-md flex items-center">
+                      <div class="px-4 py-5 text-center sm:px-6">
+                        <p class="text-3xl font-bold text-red-500">
+                          170
+                        </p>
+                        <p class="mt-1 max-w-2xl font-medium text-sm text-gray-500">
+                          Consumo
+                        </p>
+                      </div>
+                    </div>
+                    <div class="p-6 max-w-sm mx-auto bg-gray-100 rounded-xl shadow-md flex items-center">
+                      <div class="px-4 py-5 text-center sm:px-6">
+                        <p class="text-3xl font-bold text-green-500">
+                          -180
+                        </p>
+                        <p class="mt-1 max-w-2xl font-medium text-sm text-gray-500">
+                          Saldo
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+              <form class="mt-6">
+                <!-- Sizes -->
+                <div class="mt-5">
+                  <div class="flex items-center justify-between">
+                    <h3 class="text-lg text-indigo-900 font-medium">
+                      📝 Registrar comida
+                    </h3>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <div class="mt-1 flex flex-col sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
+                      <div class="mt-2 flex items-center text-sm text-gray-500">
+                        <!-- Heroicon name: solid/calendar -->
+                        <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd"
+                            d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                            clip-rule="evenodd" />
+                        </svg>
+                        8 julio del 2022
+                      </div>
+                    </div>
+                  </div>
+
+                  <fieldset class="mt-3">
+                    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                      <!-- Active: "ring-2 ring-indigo-500" -->
+                      <label
+                        class="group relative border rounded-full py-3 px-4 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 bg-orange-500 shadow-sm text-white cursor-pointer">
+                        <input type="radio" name="size-choice" value="S" class="sr-only"
+                          aria-labelledby="size-choice-2-label" />
+                        <span id="size-choice-2-label">
+                          Desayuno
+                        </span>
+
+                        <!--
+                      Active: "border", Not Active: "border-2"
+                      Checked: "border-indigo-500", Not Checked: "border-transparent"
+                    -->
+                        <span class="absolute -inset-px rounded-md pointer-events-none" aria-hidden="true"></span>
+                      </label>
+
+                      <!-- Active: "ring-2 ring-indigo-500" -->
+                      <label
+                        class="group relative border rounded-full py-3 px-4 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 bg-white shadow-sm text-gray-900 cursor-pointer">
+                        <input type="radio" name="size-choice" value="S" class="sr-only"
+                          aria-labelledby="size-choice-2-label" />
+                        <span id="size-choice-2-label">
+                          Almuerzo
+                        </span>
+
+                        <!--
+                      Active: "border", Not Active: "border-2"
+                      Checked: "border-indigo-500", Not Checked: "border-transparent"
+                    -->
+                        <span class="absolute -inset-px rounded-md pointer-events-none" aria-hidden="true"></span>
+                      </label>
+
+                      <!-- Active: "ring-2 ring-indigo-500" -->
+                      <label
+                        class="group relative border rounded-full py-3 px-4 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 bg-white shadow-sm text-gray-900 cursor-pointer">
+                        <input type="radio" name="size-choice" value="S" class="sr-only"
+                          aria-labelledby="size-choice-2-label" />
+                        <span id="size-choice-2-label">
+                          Cena
+                        </span>
+
+                        <!--
+                      Active: "border", Not Active: "border-2"
+                      Checked: "border-indigo-500", Not Checked: "border-transparent"
+                    -->
+                        <span class="absolute -inset-px rounded-md pointer-events-none" aria-hidden="true"></span>
+                      </label>
+
+                      <label
+                        class="group relative border rounded-xl py-3 px-4 flex items-center justify-center text-sm font-medium uppercase hover:bg-gray-50 focus:outline-none sm:flex-1 sm:py-6 bg-indigo-600 shadow-sm text-white cursor-pointer">
+                        <input type="radio" name="size-choice" value="S" class="sr-only"
+                          aria-labelledby="size-choice-2-label" />
+                        <span id="size-choice-2-label">
+                          Agregar un extra
+                        </span>
+
+                        <!--
+                    Active: "border", Not Active: "border-2"
+                    Checked: "border-indigo-500", Not Checked: "border-transparent"
+                  -->
+                        <span class="absolute -inset-px rounded-md pointer-events-none" aria-hidden="true"></span>
+                      </label>
+                    </div>
+                  </fieldset>
+                </div>
+              </form>
+
+              <div class="mt-6">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-lg text-indigo-900 font-medium">
+                    📆 Resumen del día
+                  </h3>
+                </div>
+
+                <!-- This example requires Tailwind CSS v2.0+ -->
+                <div class="bg-white shadow overflow-hidden sm:rounded-lg mt-3">
+                  <div class="border-t border-gray-200">
+                    <dl>
+                      <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-md font-bold text-gray-500">
+                          Desayuno
+                        </dt>
+                        <dd class="mt-1 text-sm font-medium text-gray-900 sm:mt-0 sm:col-span-2">
+                          Costo del desayuno,
+                          <span class="text-indigo-600">S/ 5 soles.</span>
+                        </dd>
+                      </div>
+                      <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-md font-bold text-gray-500">
+                          Almuerzo
+                        </dt>
+                        <dd class="mt-1 text-sm font-medium text-gray-900 sm:mt-0 sm:col-span-2">
+                          Costo del almuerzo,
+                          <span class="text-indigo-600">S/ 8 soles.</span>
+                        </dd>
+                      </div>
+                      <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-md font-bold text-gray-500">
+                          Cena
+                        </dt>
+                        <dd class="mt-1 text-sm font-medium text-gray-900 sm:mt-0 sm:col-span-2">
+                          Costo de la cena,
+                          <span class="text-indigo-600">S/ 5 soles.</span>
+                        </dd>
+                      </div>
+                      <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                        <dt class="text-md font-bold text-gray-500">
+                          Total
+                        </dt>
+                        <dd class="mt-1 text-sm font-medium text-gray-900 sm:mt-0 sm:col-span-2">
+                          Total del día,
+                          <span class="text-indigo-600">S/ 18 soles.</span>
+                        </dd>
+                      </div>
+                    </dl>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- {{-- <footer class="py-5 bg-gray-700 text-center text-white">
+      Tailwind is Awesome 😎
+    </footer> --}} -->
+  </div>
+</body>
+
+</html>
